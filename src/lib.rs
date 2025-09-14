@@ -4,11 +4,11 @@ use std::cell::SyncUnsafeCell;
 
 /// A `bool` that is initially always true. It may be set from true to false, but never the other way around. This makes it thread safe since it can only effectively be written to once.
 #[derive(Debug)]
-pub struct SyncUnsafeOnceCellBool {
+pub struct SyncUnsafeOnceCellFalsable {
     inner: SyncUnsafeCell<bool>,
 }
 
-impl SyncUnsafeOnceCellBool {
+impl SyncUnsafeOnceCellFalsable {
     #[must_use]
     pub const fn new() -> Self {
         Self {
@@ -39,7 +39,7 @@ impl SyncUnsafeOnceCellBool {
     }
 }
 
-impl Default for SyncUnsafeOnceCellBool {
+impl Default for SyncUnsafeOnceCellFalsable {
     fn default() -> Self {
         Self::new()
     }
