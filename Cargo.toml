@@ -1,5 +1,5 @@
 [package]
-name = "SyncUnsafeOnceCellBool"
+name = "sync_unsafe_once_cell_bool"
 version = "0.1.0"
 edition = "2024"
 authors = [

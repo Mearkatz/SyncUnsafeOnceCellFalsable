@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "SyncUnsafeOnceCellBool"
+name = "sync_unsafe_once_cell_bool"
 version = "0.1.0"
